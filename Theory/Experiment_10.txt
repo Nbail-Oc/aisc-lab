@@ -1,0 +1,48 @@
+EXPERIMENT NO-10
+======================================================================
+
+AIM:
+Implement Genetic algorithm
+
+RESOURCE REQUIREMENTS:
+Google Colab
+
+THEORY:
+A Genetic Algorithm (GA) is an optimization technique inspired by the process of natural selection.
+
+It works with a population of possible solutions. Each solution is evaluated using a fitness function. The better solutions are selected and used to create new solutions through crossover and mutation.
+
+The main steps are:
+• Population: Generate random solutions.
+• Fitness: Calculate how good each solution is.
+• Selection: Select the best solutions.
+• Crossover: Combine two parent solutions to create a child.
+• Mutation: Make a small random change to a child.
+• Elitism: Preserve the best solutions.
+• Termination: Repeat for a fixed number of generations.
+
+In this program, we maximize:
+f(x) = x²
+
+where:
+0 ≤ x ≤ 31
+
+The optimal solution is x = 31, giving a fitness of 961.
+
+ALGORITHM:
+1. Start.
+2. Generate a random population of 10 solutions.
+3. Calculate the fitness of each solution using f(x) = x².
+4. Sort the population according to fitness.
+5. Select the best 5 solutions as parents.
+6. Preserve the best 2 solutions.
+7. Select two parents randomly.
+8. Perform crossover to generate a child.
+9. Apply mutation with a small probability.
+10. Keep the child within the range 0–31.
+11. Repeat steps 4–10 for 20 generations.
+12. Select and display the best solution.
+13. Stop.
+
+CONCLUSION:
+The Genetic Algorithm was successfully implemented using selection, crossover, mutation, and elitism. The algorithm finds the optimal solution x = 31 with a maximum fitness value of 961.

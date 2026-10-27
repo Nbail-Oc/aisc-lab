@@ -1,0 +1,33 @@
+EXPERIMENT NO-6
+======================================================================
+
+AIM:
+To implement Unsupervised Learning using K-Means Clustering in Python to group unlabeled data points into clusters based on similarity.
+
+RESOURCE REQUIREMENTS:
+Windows, Python 3.8 or Higher, Google Colab.
+
+THEORY:
+Unsupervised Learning involves training algorithms on data without pre-existing labels or explicit target responses. The goal is to uncover hidden structure, natural patterns, or underlying distributions within the dataset.
+
+K-Means Clustering is a prominent unsupervised algorithm that partitions N data points into K distinct, non-overlapping groups (clusters). Each cluster is defined by its center point, known as a centroid.
+
+Distance between points P1(x1, y1) and P2(x2, y2) is calculated using Euclidean distance:
+
+d = √((x2 - x1)² + (y2 - y1)²)
+
+The algorithm iteratively refines cluster centers until assignments no longer change (convergence).
+
+ALGORITHM:
+1. Define the unlabeled dataset containing coordinate features.
+2. Specify K (number of desired clusters).
+3. Randomly select K points from data as initial centroids.
+4. For each iteration (until convergence):
+   o Compute Euclidean distance from each data point to all K centroids.
+   o Assign each data point to its nearest centroid.
+   o Recalculate centroids by taking the average mean of all points assigned to that cluster.
+   o If new centroids match old centroids, stop execution (converged).
+5. Print assigned clusters and calculated centroid locations.
+
+CONCLUSION:
+Unsupervised Learning using K-Means Clustering was successfully implemented in Python to discover natural groupings within an unlabeled dataset.
