@@ -21,7 +21,7 @@ FILES = [
     "Code/Experiment_09_UDP_Sender.py",
 ]
 
-folder = Path.home() / "CN_LAB"
+folder = Path(__file__).resolve().parent / "CN_LAB"
 for name in FILES:
     destination = folder / name
     destination.parent.mkdir(parents=True, exist_ok=True)
