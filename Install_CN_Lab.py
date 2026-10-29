@@ -1,7 +1,8 @@
 from pathlib import Path
 from urllib.request import urlopen
 
-BASE_URL = "https://cn-lab.onrender.com"
+# Render's current live address; update if the service is renamed.
+BASE_URL = "https://aisc-lab.onrender.com"
 FILES = [
     "README.txt",
     "Ports_and_Run_Instructions.txt",
